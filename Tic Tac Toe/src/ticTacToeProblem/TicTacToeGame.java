@@ -6,7 +6,7 @@ public class TicTacToeGame
 {
     public static void main(String[] args)
     {
-    	final int MAX_TURNS = 4;
+    	final int MAX_TURNS = 9;
         Scanner input = new Scanner(System.in);
         TicTacToe board = new TicTacToe();
         int row = 0;
@@ -15,7 +15,7 @@ public class TicTacToeGame
         boolean gameOver = false;
         boolean doneChoosingSpace = false;
         System.out.print("*** TIC TAC TOE ***");
-        
+        board.printBoard();
         while (!gameOver && board.getTurn() < MAX_TURNS) {
             
             doneChoosingSpace = false;
@@ -80,11 +80,11 @@ public class TicTacToeGame
     
     public static void printYourTurn(TicTacToe game) {
       if (game.getTurn() % 2 == 0) {
-                System.out.println("\n'X' it is your turn\n");
-            }
-            else {
-                System.out.println("\n'O' it is your turn\n");
-            }   
+    	  System.out.println("\n'X' it is your turn\n");
+      }
+      else {
+    	  System.out.println("\n'O' it is your turn\n");
+      }   
     }
     
 }
