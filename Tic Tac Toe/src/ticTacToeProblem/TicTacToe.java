@@ -60,7 +60,7 @@ public class TicTacToe {
 		   if(r == 0 || r == 1)
 		   {
 			   System.out.println();
-			   System.out.print("______________");
+			   System.out.print("________");
 		   }
 		   System.out.println();
 	   }
